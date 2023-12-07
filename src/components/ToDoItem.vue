@@ -1,8 +1,3 @@
-<!-- TodoDeleteButton -->
-<!-- TodoEditButton -->
-
-<!-- checkbox => label => edit => delete -->
-
 <template>
   <div class="outer-div">
     <div class="form-group">
