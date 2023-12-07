@@ -10,8 +10,8 @@
   </div>
 
   <div class="btn-group">
-    <button class="btn" type="submit">Clear Completed</button>
-    <button class="btn" type="submit">Clear All</button>
+    <button class="btn" @click="clearCompleted">Clear Completed</button>
+    <button class="btn" @click="clearAll">Clear All</button>
   </div>
 </template>
 
@@ -22,9 +22,20 @@ export default {
   name: 'ToDoFooter',
   props: {
     listSummary: {
+      required: true,
       type: String
+    },
+  },
+  methods: {
+    clearCompleted(){
+      this.$emit('clear-completed')
+
+    },
+    clearAll(){
+      this.$emit('clear-all')
     }
   }
+
 }
 </script>
 
