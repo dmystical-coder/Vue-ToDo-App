@@ -32,7 +32,11 @@
         </li>
       </ul>
     </div>
-    <to-do-footer @clear-all="clearAllTodos" @clear-completed="clearCompletedTodos" :listSummary="listSummary"></to-do-footer>
+    <to-do-footer
+      @clear-all="clearAllTodos"
+      @clear-completed="clearCompletedTodos"
+      :listSummary="listSummary"
+    ></to-do-footer>
   </div>
 </template>
 
@@ -82,23 +86,23 @@ export default {
       })
     },
     updateCompletedStatus(todoId) {
-      const todoToUpdate = this.todos.find((item) => item.id === todoId);
+      const todoToUpdate = this.todos.find((item) => item.id === todoId)
       todoToUpdate.completed = !todoToUpdate.completed
     },
-    updateTodoContent(todoId, newTodo){
-      const todoToUpdate = this.todos.find((item) => item.id === todoId);
-      todoToUpdate.todo = newTodo;
+    updateTodoContent(todoId, newTodo) {
+      const todoToUpdate = this.todos.find((item) => item.id === todoId)
+      todoToUpdate.todo = newTodo
     },
-    deleteTodo(todoId){
-      const todoIndex = this.todos.findIndex((item) => item.id === todoId);
-      this.todos.splice(todoIndex, 1);
+    deleteTodo(todoId) {
+      const todoIndex = this.todos.findIndex((item) => item.id === todoId)
+      this.todos.splice(todoIndex, 1)
     },
-    clearAllTodos(){
-      this.todos = [];
+    clearAllTodos() {
+      this.todos = []
     },
-    clearCompletedTodos(){
-      const uncompletedTodos = this.todos.filter((item) => item.completed === false);
-      this.todos = uncompletedTodos;
+    clearCompletedTodos() {
+      const uncompletedTodos = this.todos.filter((item) => item.completed === false)
+      this.todos = uncompletedTodos
     }
   },
   computed: {

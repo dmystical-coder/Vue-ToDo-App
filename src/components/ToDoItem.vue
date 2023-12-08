@@ -52,21 +52,21 @@ export default {
   },
   emits: ['checkbox-changed', 'item-changed'],
   methods: {
-    updateCheckStatus(){
-      this.$emit('checkbox-changed');
+    updateCheckStatus() {
+      this.$emit('checkbox-changed')
     },
     toggleItemToEditForm() {
       this.isEditing = true
     },
-    itemEdited(newTodo){
-      this.$emit('item-changed', newTodo);
-      this.isEditing = false;
+    itemEdited(newTodo) {
+      this.$emit('item-changed', newTodo)
+      this.isEditing = false
     },
     editCancelled() {
       this.isEditing = false
     },
-    triggerDelete(){
-      this.$emit('item-deleted');
+    triggerDelete() {
+      this.$emit('item-deleted')
     }
   }
 }
