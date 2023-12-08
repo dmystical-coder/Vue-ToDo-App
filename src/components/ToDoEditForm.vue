@@ -41,6 +41,7 @@
 
 <script>
 export default {
+  name: 'ToDoEditForm',
   emits: ['item-edited', 'item-cancelled'],
   props: {
     todo: {

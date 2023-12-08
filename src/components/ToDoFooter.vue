@@ -19,6 +19,7 @@
 import '../assets/reset.css'
 
 export default {
+  name: 'ToDoFooter',
   props: {
     listSummary: {
       required: true,

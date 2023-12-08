@@ -27,6 +27,7 @@
 import ToDoEditForm from './ToDoEditForm.vue'
 
 export default {
+  name: 'ToDoItem',
   components: {
     ToDoEditForm
   },

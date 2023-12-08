@@ -21,6 +21,7 @@
 
 <script>
 export default {
+  name: 'ToDoForm',
   data() {
     return {
       style: {
