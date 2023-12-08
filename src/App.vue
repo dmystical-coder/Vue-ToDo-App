@@ -43,8 +43,8 @@
 <script>
 import uniqueid from 'lodash/uniqueId'
 import ToDoForm from '@/components/ToDoForm.vue'
-import ToDoItem from '@/components/TodoItem.vue'
-import ToDoFooter from '@/components/TodoFooter.vue'
+import ToDoItem from '@/components/ToDoItem.vue'
+import ToDoFooter from '@/components/ToDoFooter.vue'
 
 export default {
   name: 'App',
