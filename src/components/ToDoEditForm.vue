@@ -65,6 +65,7 @@ export default {
       }
     },
     onCancel() {
+      this.newTodo = this.todo
       this.$emit('edit-cancelled')
     }
   }
