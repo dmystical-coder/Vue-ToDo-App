@@ -55,26 +55,7 @@ export default {
   },
   data() {
     return {
-      todos: [
-        {
-          id: uniqueid('todo-'),
-          todo: 'Do something nice for someone I care about',
-          completed: true,
-          userId: 26
-        },
-        {
-          id: uniqueid('todo-'),
-          todo: 'Memorize the fifty states and their capitals',
-          completed: false,
-          userId: 48
-        },
-        {
-          id: uniqueid('todo-'),
-          todo: 'Watch a classic movie',
-          completed: true,
-          userId: 4
-        }
-      ]
+      todos: [],
     }
   },
   methods: {
